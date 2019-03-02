@@ -1,0 +1,23 @@
+letter codes for object types:
+p = polynomial
+f = function
+F = vector-valued function
+pf = parametric function
+cf = complex function
+M = matrix
+FM = function matrix
+DM = dual number matrix
+CM = complex matrix
+SM = sparse matrix
+IS = infinite series
+CS = complex infinite series
+z  = complex number
+d = dual number
+G = group
+q = quaternion
+dq = dual quaternion
+o = octonian
+ODE = ordinary differential equation
+PDE = partial differential equation
+v = vector
+T = tensor

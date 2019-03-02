@@ -1,0 +1,65 @@
+#ifndef STATISTICS_H
+#define STATISTICS_H
+#pragma once
+
+ComplexNumber mean(std::vector<ComplexNumber> vec);
+double mean(int a, int b, Function f);
+double logisticFunction(double n);
+double logisticFunction(double x, Function f);
+double logit(double x);
+double logit(double x, Function f);
+double Gaussian1D(double x, double o);
+double Gaussian1D(double x, double u, double o);
+double Gaussian2D(double x, double y, double o);
+double Gaussian2D(double x, double y, double u1, double u2, double o);
+double GaussianND(std::vector<double> x, std::vector<double> o);
+Polynomial linearLeastSquaresRegression(Matrix A);
+Polynomial linearLeastSquaresRegression(Vector v1, Vector v2);
+double covariance(std::vector<double> v1, std::vector<double> v2);
+double covariance(double* v1, double* v2, int sz);
+double zscore(double b, double mean, double stddev);
+Vector zscores(Vector v);
+double normalCDF(double z);
+double normalCDFApproximation(double z);
+double normalPDF(double z);
+double normalCDFExact(double x);
+Vector pvalues(Vector v);
+double t_score(double b, double mean, double stddev);
+double errorFunction(double z);
+double errorFunctionComplement(double z);
+double inverseErfPadeApproximation(double z);
+double inverseErfc(double z);
+double CauchyPDF(double x, double x0, double gamma);
+double CauchyCDF(double x, double x0, double gamma);
+double studentsCDF(double t, double n);
+double studentsCDFApproximation(double x, double n);
+double studentsCDFBetaVersion(double t, double v);
+double studentsPDF(double x, double v);
+double studentsPDFApproximation(double x, double n);
+double chiSquareCDF(double k, double x);
+double chiSquareCDFAppoximation(int n, double X);
+double chiSquareCDFInverseApproximation(double p, int n);
+double ChiSquareTest(Matrix A);
+double lognormalDistributionPDF(double x, double mean, double variance);
+double lognormalDistributionCDF(double x, double mean, double variance);
+double FDistributionApproximation(double x, double v1, double v2);
+double GompertzPDF(double x, double n, double b);
+double GompertzCDF(double x, double n, double b);
+double correlationCoefficient(Vector a, Vector b);
+double correlationCoefficient(double* n, double* p, int vals);
+double coefficientOfDetermination(Vector x, Vector y);
+Matrix correlationMatrix(Matrix A);
+Matrix covarianceMatrix(Matrix M);
+std::vector<double> JarqueBeraTest(Matrix M, double criticalValue);
+std::vector<double> JarqueBeraSkewness(Matrix M);
+std::vector<double> JarqueBeraKurtosis(Matrix M);
+std::vector<double> DAgostinoTest(Matrix M, double criticalValue);
+std::vector<double> DAgostinoSkewness(Matrix M);
+std::vector<double> DAgostinoKurtosis(Matrix M);
+std::vector<double> AndersonDarlingTest(Matrix M);
+std::vector<double> AndersonDarlingTest(Vector X);
+double rootMeanSquare(std::vector<double> vec);
+ComplexNumber rootMeanSquare(std::vector<ComplexNumber> vec);
+double rootMeanSquare(int T1, int T2, Function f);
+ComplexNumber rootMeanSquare(int T1, int T2, ComplexFunction f);
+#endif

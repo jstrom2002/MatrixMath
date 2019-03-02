@@ -1,0 +1,12 @@
+f1(x) = LambertW(x)-LambertW(x-1)
+f2(x) = 0.5*sin(x)
+f3(x,s) = 0.5*s*sin(x)
+f4(x) = 1/x
+
+cf1(z) = z*exp(z)
+cf2(z) = (z-1)*sin(z)
+cf3(z) = (((z*exp(z))*exp((z*exp(z))))-1)*sin(((z*exp(z))*exp((z*exp(z)))))
+cf4(z) = ((exp(-EMconstant*z))/z)
+cf5(z,n) = (1+(1/(z/n)))*exp(z/n)
+cf6(z) = ((z*exp(z))-1)*sin(z*exp(z))
+
